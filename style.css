@@ -72,16 +72,6 @@ input {
     padding-left: 1rem;
 }
 
-input::placeholder {
-    /* color: red; */
-    /* padding-left: 1rem; */
-}
-  
-
-/* .search > * {
-    margin-left: 1rem;
-} */
-
 .searchbar {
     width: 30rem;
     height: 2.5rem;
@@ -146,17 +136,6 @@ input::placeholder {
     flex-direction: row-reverse;
 }
 
-/* .create-button {
-    width: 6rem;
-    height: 2.5rem;
-    margin: 1.3rem;
-    border: none;
-    border-radius: 10px;
-    background-color: #a8bc8c;
-    color: #121212;
-    font-size: 1rem;
-    font-weight: 700;
-} */
 
 .create-button {
     color: #eaeaea;
@@ -400,6 +379,10 @@ input::placeholder {
     font-size: 0.9rem;
 }
 
+.mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .container {
         font-size: .8rem;
@@ -410,13 +393,30 @@ input::placeholder {
     }
 
    .container {
-        /* display: grid;
-        grid-template-columns: 1fr; */
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .header {
         /* border: 1px solid green; */
+        grid-column: 1 / 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
     }
+
+
+    .search {
+        grid-column: 1 / 3;
+
+        margin: 0;
+    }
+
+    .profile {
+        grid-column: 2 / 3;
+        display: none;
+    }
+
 
     .header > div {
         /* border: 1px solid yellow; */
@@ -427,5 +427,50 @@ input::placeholder {
         width: 10rem;
         height: 1.5rem;
         font-size: 0.9rem;
+        /* margin-left: 1rem; */
+        /* display: none; */
+        /* margin-left: rem; */
     }
+
+    .bio {
+        grid-column: 1 / 2;
+        margin-left: 0;
+    }
+
+    .create {
+        grid-column: 2 / 3;
+        margin: 0;
+        /* display: flex; */
+        justify-content: space-around;
+        /* padding: 20px; */
+    }
+
+    .status > * {
+        font-size: .9rem;
+    }
+
+    .create-button {
+        font-size: .8rem;
+        margin: 0;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #a8bc8c;
+    }
+
+    .bi-bell .mobile {
+        order: 1;
+        color: red;
+    }
+    
 }

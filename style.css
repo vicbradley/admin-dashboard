@@ -400,42 +400,32 @@ input::placeholder {
     font-size: 0.9rem;
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    .container {
+        font-size: .8rem;
+    }
+
     .sidebar {
         display: none;
     }
 
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
+   .container {
+        /* display: grid;
+        grid-template-columns: 1fr; */
     }
 
     .header {
-        grid-column: 1 / 2;
-        display: flex;
-        font-size: .5rem;
-        padding: 0;
-        margin: 0;
+        /* border: 1px solid green; */
     }
-    
+
     .header > div {
-        border: 2px solid yellow;
+        /* border: 1px solid yellow; */
     }
+
 
     .searchbar {
-        display: none;
+        width: 10rem;
+        height: 1.5rem;
+        font-size: 0.9rem;
     }
-
-    .profile-img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .profile-img-bio,.profile-name {
-        display: none;
-    }
-
-    .create-button {
-        font-size: .5rem;
-    }
-} */
+}

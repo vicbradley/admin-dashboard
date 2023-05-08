@@ -224,8 +224,8 @@ input {
     /* background-color: #242c2c; */
     background-color: #121212;
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: repeat(autofit,1fr);
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(autofit,1fr); */
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
@@ -465,7 +465,7 @@ input {
     }
 
     .content {
-        display: none;
+        /* display: none; */
     }
 
     .mobile {
@@ -490,4 +490,22 @@ input {
         font-size: 1.5rem;
    }
     
+   .content {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+
+   .discover {
+    display: none;
+   }
+
+   .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   
+   .your-projects {
+    grid-column: 1 / 2;
+   }
 }
